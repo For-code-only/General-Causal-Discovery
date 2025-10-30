@@ -1,7 +1,7 @@
 library(dHSIC)
 library(CondIndTests)
 
-pruning_KCI <- function(X, pi, alpha) {
+pruning_KCI <- function(X, pi, alpha=0.001) {
   X <- scale(X)
   d <- ncol(X)
   A <- matrix(0, nrow = d, ncol = d)
@@ -34,3 +34,4 @@ pruning_KCI <- function(X, pi, alpha) {
   
   A
 }
+
