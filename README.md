@@ -15,7 +15,7 @@ As mentioned in the paper, since we use up to the first 500 data points for each
 
 We use the Sachs dataset, and we provide both its ground-truth DAG and the corresponding data.
 
-We apply two pruning methods, `pruning_CAM` and `pruning_KCI`, using the same input settings for consistency. In both cases, the variable order obtained from the causal discovery procedure is assigned to `pi`, and the original dataset is used as `X`. The parameters `CUTOFF` and `alpha` are uniformly set to 0.001.
+We apply two pruning methods, `pruning_CAM` and `pruning_KCI`, using the same input settings for consistency. In both cases, the variable order obtained from the causal discovery procedure is assigned to `pi`, and the original dataset is used as `X`. The parameters `CUTOFF` and `alpha` are set to the same value as 0.001.
 We recommend using CAM pruning due to its high computational efficiency. After obtaining the estimated DAG, please use the Metrics.R file to evaluate the experimental results.
 
 ### Required Softwares
